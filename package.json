@@ -2,7 +2,8 @@
     "scripts": {
         "test": "jest --watch",
         "test-once": "jest",
-        "start": "parcel sumador.html",
+        "start": "node ./src/gilded-rose/index.js",
+        "start2": "parcel sumador.html",
         "build": "parcel build sumador.html"
     },
     "dependencies": {
