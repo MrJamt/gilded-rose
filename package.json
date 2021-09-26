@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "test": "jest --watch",
+        "test": "jest --watch --coverage",
         "test-once": "jest",
         "start": "node ./src/gilded-rose/index.js",
         "start2": "parcel sumador.html",
