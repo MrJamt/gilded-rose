@@ -1,5 +1,3 @@
-console.log("hola") 
-
 const GildedRose = require('./gilded-rose')
 const Item = require('./item')
 
