@@ -2,9 +2,7 @@
     "scripts": {
         "test": "jest --watch --coverage",
         "test-once": "jest",
-        "start": "node ./src/gilded-rose/index.js",
-        "start2": "parcel sumador.html",
-        "build": "parcel build sumador.html"
+        "start": "node ./src/index.js"
     },
     "dependencies": {
       "@babel/core": "^7.15.4",
