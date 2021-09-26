@@ -11,7 +11,9 @@ npm start
 
 ### Comandos probar:
 
-Ejecutar pruebas de unidad de forma continua --watch: `npm test`
+Ejecutar pruebas de unidad de forma continua --watch y con cobertura: `npm test`
+
+Puedes ver el reporte de cobertura en `./coverage/lcov-report/index.html`
 
 Ejecutar pruebas de unidad solo una vez: `npm run test-once`
 
