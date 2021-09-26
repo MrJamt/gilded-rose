@@ -16,16 +16,6 @@ Ejecutar pruebas de unidad de forma continua --watch: `npm test`
 Ejecutar pruebas de unidad solo una vez: `npm run test-once`
 
 
-
-![](https://github.com/yamitcar/gilded-rose-ruby/workflows/Ruby/badge.svg)
-
-withTest:  
-![](https://github.com/yamitcar/gilded-rose-ruby/workflows/Ruby/badge.svg?branch=withTest)
-
-para ver el reporte de analisis de codigo: 
-
-https://yamitcar.github.io/gilded-rose-ruby/
-
 ## Cómo opera la posada La Rosa Dorada (Gilded Rose) 
 
 Bienvenido al equipo de **Gilded Rose**.
@@ -52,6 +42,7 @@ Bastante simple, ¿no? Bueno, ahora es donde se pone interesante:
   * luego de la `fecha de venta` su `calidad` aumenta `2` unidades por día
 * La `calidad` de un artículo nunca es mayor a `50`
 * El artículo "Sulfuras" (`Sulfuras`), siendo un artículo legendario, no modifica su `fecha de venta` ni se degrada en `calidad`
+  * Un artículo nunca puede tener una `calidad` superior a `50`, sin embargo las Sulfuras siendo un artículo legendario posee una calidad inmutable de `80`.
 * Una "Entrada al Backstage", como el queso brie, incrementa su `calidad` a medida que la `fecha de venta` se aproxima
   * si faltan 10 días o menos para el concierto, la `calidad` se incrementa en `2` unidades
   * si faltan 5 días o menos, la `calidad` se incrementa en `3` unidades
@@ -66,12 +57,7 @@ Esto requiere una actualización del sistema:
 
 Siéntete libre de realizar cualquier cambio al mensaje `updateQuality` y agregar el código que sea necesario, mientras que todo siga funcionando correctamente. Sin embargo, **no alteres el objeto `Item` ni sus propiedades** ya que pertenecen al goblin que está en ese rincón, que en un ataque de ira te va a liquidar de un golpe porque no cree en la cultura de código compartido.
 
-## Notas finales
-
-Para aclarar: un artículo nunca puede tener una `calidad` superior a `50`, sin embargo las Sulfuras siendo un artículo legendario posee una calidad inmutable de `80`.
-
-
-### Referencias
+## Referencias
 Docker
 https://www.docker.com/blog/getting-started-with-docker-using-node-jspart-i/
 
