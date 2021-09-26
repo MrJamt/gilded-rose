@@ -41,23 +41,22 @@ describe.each([
 })
 
 describe.each([
-  ['+5 Dexterity Vest', 0, 0, -1, 0],
-  ['Aged Brie', 0, 49, -1, 50],
-  ['Elixir of the Mongoose', 0, 0, -1, 0],
+  ['+5 Dexterity Vest', 0, 0, 0],
+  ['Aged Brie', 0, 49, 50],
+  ['Elixir of the Mongoose', 0, 0, 0],
   // ['Sulfuras, Hand of Ragnaros', -1, 80, -1, 80],
-  ['Backstage passes to a TAFKAL80ETC concert', 15, 50, 0, 50],
-  ['Backstage passes to a TAFKAL80ETC concert', 15, 49, 0, 50],
-  ['Backstage passes to a TAFKAL80ETC concert', 10, 49, 0, 50],
-  ['Backstage passes to a TAFKAL80ETC concert', 5, 49, 0, 50],
+  ['Backstage passes to a TAFKAL80ETC concert', 15, 50, 50],
+  ['Backstage passes to a TAFKAL80ETC concert', 15, 49, 50],
+  ['Backstage passes to a TAFKAL80ETC concert', 10, 49, 50],
+  ['Backstage passes to a TAFKAL80ETC concert', 5, 49, 50],
   // ['Conjured Mana Cake', 3, 6],
-])('50>= Q >=0  %s (%i %i)', (name, sellIn, quality, expSellIn, expQuality) =>{
-  it(`--> (${expSellIn},${expQuality})`, ()=> {
+])('50>= Q >=0  %s (%i %i)', (name, sellIn, quality, expQuality) =>{
+  it(`--> Q: ${expQuality}`, ()=> {
     let gildedRose = new GildedRose()
     gildedRose.items.push(new Item(name, sellIn, quality))
     
     gildedRose.updateQuality()
 
-    expect(gildedRose.items[0].sellIn).toEqual(expSellIn)
     expect(gildedRose.items[0].quality).toEqual(expQuality)
   })
 })
