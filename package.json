@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "test": "jest --watch --coverage",
+        "test": "jest --watchAll --coverage",
         "test-once": "jest",
         "start": "node ./src/index.js"
     },

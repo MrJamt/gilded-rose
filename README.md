@@ -2,7 +2,7 @@
 
 ### Cómo empezar
 ```
-git clone git@github.com:jgabardini/gilded-rose-js.git
+git clone git@github.com:kleer-la/gilded-rose-js.git
 cd gilded-rose-js
 docker-compose run --service-ports csd-service bash  # si usas con docker
 npm install
